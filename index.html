@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flappy Pose</title>
+    <meta name="description" content="Flappy bird but where you have to flap your arms!" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="columns">
+      <div class="column">
+        <div id="sketch-container"></div>
+      </div>
+      <div class="column">
+        <h1>Score: <span id="score">0</span></h1>
+        <div id="message"></div>
+        <div id="button-wrap">
+          <p>
+            <strong>How to play:</strong> Raise your wrists above shoulder level and then back down. It's tricky, more
+            natural controls coming soon 🐦
+          </p>
+          <p>
+            Song starts when you hit space or start webcam 🎶
+          </p>
+          <p>
+            <button id="start-button">Start Webcam</button>
+          </p>
+          <p>(or press space to flap without the webcam)</p>
+          <p>
+            <a href="https://glitch.com/edit/#!/flappy-pose?path=README.md:1:0">View the source</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/Bird.js"></script>
+    <script src="src/Pipe.js"></script>
+    <script src="src/sketch.js"></script>
+    <script src="src/flap.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.js"></script>
+
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
